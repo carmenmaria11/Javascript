@@ -67,12 +67,13 @@
     function right(){
     score++
     score++
+    event.target.style.backgroundColor = "lightgreen" 
     }
     
     function wrong(){
-
+    event.target.style.backgroundColor = "red"; 
     }
-
+    
     function finish(){
         alert(score)
         location.reload();
@@ -81,13 +82,3 @@
 </body>
 
 </html>
-
-<style>
-    button {
-        background-color: paleturquoise;
-    }
-
-    button:focus {
-        background-color: rgb(247, 148, 202);
-    }
-</style>

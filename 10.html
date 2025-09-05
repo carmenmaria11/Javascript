@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="writeTable()">Start!</button>
+</body>
+</html>
+<script>
+function square(i) {
+        return i * i
+    }
+
+    function third(i) {
+        return i * i * i
+    }
+    function getRow(i) {
+    let s = '<tr> '                       // tr starter en "table row"
+                                          // td starter en celle - table data
+        s += '<td>' + i + '</td>'         // en celle som viser selve tallet 
+        s += '<td>' + square(i) + '</td>' // en celle som viser kvadratet
+        s += '<td>' + third(i) + '</td>'  // en celle som viser tredje potens
+        s += '</tr>'
+        return s
+    }
+    function writeTable() {
+        document.write('<table>')
+        for (let i = 0; i < 1001; i++) {
+            document.write(getRow(i))
+        }
+        document.write('</table>')
+    }
+</script>
