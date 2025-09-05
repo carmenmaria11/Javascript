@@ -6,6 +6,88 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>The Rookie quiz</h1>   
+   <!--Spørsmål 1-->
+    <h3>Hvem spiller hovedrollen som John Nolan?</h3>
+    <button onclick="right()">
+    Nathan Fillion
+    </button>
+    <button onclick="wrong()">
+    Mark Harmon
+    </button>
+
+    <br>    
+    <!--Spørsmål 2-->
+    <h3>Hva handler serien The Rookie om?</h3>
+    <button onclick="wrong()">
+    En nyutdannet lege på et sykehus
+    </button>
+    <button onclick="right()">
+    En mann i 40-årene som starter på nytt som politibetjent
+    </button>
+
+    <br>    
+    <!--Spørsmål 3-->
+    <h3>Hvilken by foregår handlingen i?</h3>
+    <button onclick="wrong()">
+    New York
+    </button>
+    <button onclick="right()">
+    Los Angeles
+    </button>
+
+    <br>    
+    <!--Spørsmål 4-->
+    <h3>Hva er spesielt med John Nolan sammenlignet med de andre "rookiene"?</h3>
+    <button onclick="right()">
+    Han er mye eldre
+    </button>
+    <button onclick="wrong()">
+    Han er født i en politi-familie
+    </button>
+
+    <br>    
+    <!--Spørsmål 5-->
+    <h3>Hvilken sjanger tilhører serien?</h3>
+    <button onclick="wrong()">
+    Reality-TV
+    </button>
+    <button onclick="right()">
+    Krim/drama
+    </button>
+
+    <!--Restart-->
+    <h2>Se poeng?</h2>
+    <button onclick="finish()">
+    Trykk her
+    </button>
+
+    <script>
+    let score = 0 
+    function right(){
+    score++
+    score++
+    }
     
+    function wrong(){
+
+    }
+
+    function finish(){
+        alert(score)
+        location.reload();
+    }
+    </script>
 </body>
+
 </html>
+
+<style>
+    button {
+        background-color: paleturquoise;
+    }
+
+    button:focus {
+        background-color: rgb(247, 148, 202);
+    }
+</style>
