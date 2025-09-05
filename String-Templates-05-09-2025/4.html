@@ -1,0 +1,22 @@
+<script>
+    function tabell() {
+        let fornavn = prompt("Hva er fornavnet ditt?")
+        let etternavn = prompt("hva er etternavnet ditt?")
+        let alder = prompt("Hvor gammel er du?")
+
+        document.write(`
+   <table border="100">
+       <tr>
+           <th>Fornavn</th>
+           <th>Etternavn</th>
+           <th>Alder</th>
+       </tr>
+       <tr>
+           <td>${fornavn}</td>
+           <td>${etternavn}</td>
+           <td>${alder}</td>
+       </tr>
+   </table>`) 
+    }
+    tabell()
+</script>
